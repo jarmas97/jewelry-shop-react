@@ -1,0 +1,104 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  margin: 0;
+  padding: 0;
+}
+  
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+header {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  user-select: none;
+  height: 100px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.menu .link-button,
+.dropdown-menu .link-button {
+  user-select: none;
+  text-decoration: none;
+  padding: 8px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(227, 151, 0);
+  margin: 0 5px;
+  height: fit-content;
+  width: 90px;
+  transition: background-color 0.2s ease;
+  display: inline-block;
+  text-align: center;
+  color: black;
+}
+
+.menu .link-button:hover,
+.dropdown-menu .link-button:hover {
+  background: rgb(255, 205, 105);
+  box-shadow: 0px 0px 0px transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+.button:active {
+  background: var(--button-active);
+  outline: none;
+}
+
+.content, .content-centered {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%;
+  word-break: break-word;
+  overflow: hidden;
+  background-color: lightblue;
+}
+
+.content-centered {
+  text-align: center;
+}
+
+.product {
+  background-color: coral;
+}
+
+.error {
+  display: none;
+}
